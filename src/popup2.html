@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+@@include('./include/head.html')
+<body class="front_body">
+	<div class="page_wrap">
+		<a href="#" class="btn_guide">레이어팝업</a>
+	</div>
+	<!-- layer -->
+	<div class="popup_wrap type2" id="sample_popup">
+		<div class="bg_dim"></div>
+		<div class="botpos_vlayer">
+			<div class="botpos_vtitlow"><h3 class="botpos_vtit">타이틀</h3></div>
+			<div class="botpos_vcontlow">
+				내용이 들어갑니다.
+			</div>
+			<a href="javascript:;" class="btn_closeitem popup_close"><span class="hdtext">닫기</span></a>
+		</div>
+	</div>
+	<!-- // layer -->
+	<script>
+		// 퍼블확인용
+		let url = window.location.href.split('?')[1];
+		let url_2 = url !== undefined ? url.split('#')[0] : null;
+		
+		var samplePopup = new DesignPopup({
+			selector: "#sample_popup",
+			callback(){
+				console.log('callback');
+			}
+		});	
+
+		document.querySelector(".btn_guide").addEventListener("click",(e)=>{
+			e.preventDefault();
+			var samplePopup = new DesignPopup({
+				selector: "#sample_popup",
+				callback(){
+					console.log('callback');
+				}
+			});	
+		});
+	</script>
+</body>
+</html>
