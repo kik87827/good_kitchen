@@ -31,7 +31,9 @@ html,
     &.bgtype2{background:#f8f8f8;}
     &.bgtype3{background:#f2f2f2;}
 }
-.middle_wrap{}
+.middle_wrap{
+    &.type2{padding:rem(26.66666666666667) rem(23.33) rem(60);}
+}
 .header_title{display:inline-block;line-height:1;font-size:rem(19.33);font-weight:700;}
 .between_main_group{flex:1;min-height:0;}
 .between_else_group{flex:0;}
