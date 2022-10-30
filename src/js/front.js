@@ -325,10 +325,8 @@ function commonForm() {
 
 function bottomLayer(){
   const bottom_layer = document.querySelector(".bottom_layer");
-  const header_wrap  = document.querySelector(".header_wrap");
-  let header_wrap_height  = header_wrap !== null ? header_wrap.getBoundingClientRect().height : 0;
   const page_wrap = document.querySelector(".page_wrap");
-  const middle_wrap = page_wrap.querySelector(".middle_wrap");
+  const middle_wrap = document.querySelector(".middle_wrap");
   
   action();
   window.addEventListener("resize",()=>{
@@ -342,7 +340,6 @@ function bottomLayer(){
       }else{
         page_wrap.style.paddingBottom = `${bottom_layer.getBoundingClientRect().height}px`;
       }
-      console.log(page_wrap.classList.contains("flex_layout"));
     }
   }
 }
