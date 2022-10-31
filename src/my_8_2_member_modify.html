@@ -3,17 +3,85 @@
 @@include('./include/head.html')
 <body class="front_body">
 	<div class="page_wrap layout_type2">
-		<header class="header_wrap type2">
-			<div class="header_left_group">
-				<a href="#" class="btn_history_back"><span class="hdtext">뒤로가기</span></a>
-			</div>
-			<h1 class="header_title">회원정보</h1>
-		</header>
-		<section class="middle_wrap">
-			내용이 들어갑니다.
-		</section>
+		<div class="between_main_group">
+			<header class="header_wrap type2">
+				<div class="header_left_group">
+					<a href="#" class="btn_history_back"><span class="hdtext">뒤로가기</span></a>
+				</div>
+				<h1 class="header_title">회원정보</h1>
+			</header>
+			<section class="middle_wrap type2">
+				<div class="form_table_group">
+					<table class="form_table">
+						<tr>
+							<th><span class="form_label_g"><span class="form_label">닉네임</span></span></th>
+							<td>
+								<div class="form_get_data">명서</div>
+							</td>
+						</tr>
+						<tr>
+							<th><span class="form_label_g"><span class="form_label">이름</span></span></th>
+							<td>
+								<input type="text" class="form_input" value="홍길동">
+							</td>
+						</tr>
+						<tr>
+							<th><span class="form_label_g"><span class="form_label">가입유형</span></span></th>
+							<td>
+								<div class="form_get_data">카카오 가입자</div>
+							</td>
+						</tr>
+						<tr>
+							<th><span class="form_label_g"><span class="form_label">휴대폰 <br class="nbr">번호</span></span></th>
+							<td>
+								<div class="inline_flex_form_group">
+									<div class="inline_flex_form">
+										<input type="text" class="form_input" value="01012345678">
+										<div class="has_btn">
+											<button type="button" class="btn_inlinebox">인증번호 발송</button>
+										</div>
+									</div>
+								</div>
+								<p class="import_para">휴대폰번호 수정 시만 인증번호 발송 하세요</p>
+							</td>
+						</tr>
+						<tr>
+							<th><span class="form_label_g"><span class="form_label">인증번호 <br class="nbr">확인</span></span></th>
+							<td>
+								<div class="inline_flex_form_group">
+									<div class="inline_flex_form">
+										<input type="text" class="form_input">
+										<div class="has_btn">
+											<button type="button" class="btn_inlinebox">인증번호 확인</button>
+										</div>
+									</div>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th><span class="form_label_g"><span class="form_label">집주소</span></span></th>
+							<td>
+								<div class="inline_flex_form_group">
+									<div class="inline_flex_form">
+										<input type="text" class="form_input">
+										<div class="has_btn">
+											<button type="button" class="btn_inlinebox">주소찾기</button>
+										</div>
+									</div>
+									<div class="inline_flex_form">
+										<input type="text" class="form_input">
+									</div>
+								</div>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</section>
+		</div>
 		<div class="between_else_group">
-			하단 내용
+			<div class="btn_bottom_submit_wrap">
+				<a href="#" class="btn_bottom_submit"><span class="submit_text">수정완료</span></a>
+			</div>
 		</div>
 	</div>
 </body>

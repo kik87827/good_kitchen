@@ -348,3 +348,49 @@ function bottomLayer() {
     }
   }
 }
+
+
+function bannerSwiperFunc(target) {
+  var mid_banner_target = document.querySelector(target);
+  var mid_banner_slide = document.querySelectorAll(`${target} .swiper-slide`);
+  console.log(target);
+  var count_length = mid_banner_target.querySelector(".count_length");
+  var count_current = mid_banner_target.querySelector(".count_current");
+  var mid_banner_swiper = null;
+  count_length.innerHTML = mid_banner_slide.length;
+  if (mid_banner_slide.length) {
+    mid_banner_swiper = new Swiper(`${target} .banner-container`, {
+      speed: 800,
+      loop: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false
+      }
+    });
+    mid_banner_swiper.on("slideChange", () => {
+      count_current.innerHTML = mid_banner_swiper.realIndex + 1;
+    });
+  }
+}
+
+
+function toggleTerms() {
+  const emp_props_checkbox = document.querySelector(".agree_total_row .emp_props_checkbox");
+  const agree_tail_checkbox = document.querySelectorAll(".agree_tail_row .props_checkbox");
+  const btn_form_toggle = document.querySelectorAll(".btn_form_toggle");
+  emp_props_checkbox.addEventListener("click", (e) => {
+    agree_tail_checkbox.forEach((element) => {
+      element.checked = e.currentTarget.checked;
+    });
+  });
+  btn_form_toggle.forEach((element) => {
+    element.addEventListener("click", (e) => {
+      e.preventDefault();
+      let thisEventObj = e.currentTarget;
+      let thisEventParent = thisEventObj.closest("li");
+      let thisEventTarget = thisEventParent.querySelector(".props_terms_low");
+      thisEventObj.classList.toggle("active");
+      thisEventTarget.classList.toggle("active");
+    });
+  });
+}
