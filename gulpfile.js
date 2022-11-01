@@ -18,14 +18,14 @@ gulp.task('scss', function () {
 	.pipe(scss().on('error', scss.logError))
 	.pipe(autoprefixer())
 	.pipe(sourcemaps.write('.'))
-	.pipe(gulp.dest('./dist/css/'))
+	.pipe(gulp.dest('./dist/assets/css/'))
 });
 
 gulp.task('htmlbeautify', function () {
 	var options = { indent_with_tabs : true }
 	gulp.src('./src/**.html')
 	.pipe(htmlbeautify(options))
-	.pipe(gulp.dest('./dist/'))
+	.pipe(gulp.dest('./dist/assets'))
 });
 
 gulp.task('connect', function() {
@@ -45,7 +45,7 @@ gulp.task('jshint',function(){
 gulp.task('beautify',function(){
 	gulp.src('./src/js/*.js')
 	.pipe(beautify.js({indent_size: 2}))
-	.pipe(gulp.dest('./dist/js/'))
+	.pipe(gulp.dest('./dist/assets/js/'))
 });
 
 gulp.task('fileinclude',function(){
