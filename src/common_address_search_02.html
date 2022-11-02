@@ -2,53 +2,74 @@
 <html lang="ko">
 @@include('./include/head.html')
 <body class="front_body">
-	<div class="page_wrap flex_layout">
-		<header class="header_wrap">
-			<h1 class="header_title">주소찾기</h1>
-			<div class="header_right_group">
-				<a href="#" class="btn_header_close"><span class="hdtext">닫기</span></a>
-			</div>
-		</header>
-		<section class="middle_wrap">
-			<div class="middle_search_form">
-				<p class="form_search_guide"><strong class="color_skyblue_emp">읍, 면, 동, 도로명 주소</strong>를 입력하세요.</p>
-				<div class="form_search_field">
-					<input type="text" class="form_search_input" placeholder="주소를 입력해주세요">
-					<a href="#" class="btn_form_search"><span class="hdtext">검색</span></a>
-				</div>
-			</div>
-			<div class="middle_result_form">
-				<div class="data_result_box_group">
-					<div class="data_result_box">
-						<div class="data_result_emp">13545</div>
-						<div class="data_key_tb">
-							<div class="data_key_tr">
-								<div class="data_key_cell define_kind"><span class="data_kind_label">도로명</span></div>
-								<div class="data_key_cell define_value"><div class="data_result_text">경기 성남시 분당구 안양판교로 806-6</div></div>
-							</div>
-							<div class="data_key_tr">
-								<div class="data_key_cell define_kind"><span class="data_kind_label">지 번</span></div>
-								<div class="data_key_cell define_value"><div class="data_result_text">경기 성남시 분당구 운중동 432</div></div>
-							</div>
-						</div>
-					</div>
-					<div class="data_result_box">
-						<div class="data_result_emp">13545</div>
-						<div class="data_key_tb">
-							<div class="data_key_tr">
-								<div class="data_key_cell define_kind"><span class="data_kind_label">도로명</span></div>
-								<div class="data_key_cell define_value"><div class="data_result_text">경기 성남시 분당구 안양판교로 806-6</div></div>
-							</div>
-							<div class="data_key_tr">
-								<div class="data_key_cell define_kind"><span class="data_kind_label">지 번</span></div>
-								<div class="data_key_cell define_value"><div class="data_result_text">경기 성남시 분당구 운중동 432</div></div>
-							</div>
-						</div>
-					</div>
-					<div class="nodata_g"><p class="nodata_para">데이터가 없습니다.</p></div>
-				</div>
-			</div>
-		</section>
+	<div class="page_wrap">
+		<a href="#" class="btn_guide">레이어팝업</a>
 	</div>
+	<!-- popup -->
+	<div class="popup_wrap" id="samplePopup">
+		<div class="bg_dim"></div>
+		<div class="popup_item">
+			<div class="popup_titlelow">
+				<h3 class="popup_title type2">주소찾기</h3>
+			</div>
+			<div class="popup_contentlow bgtype2">
+				<div class="pcont_inwrap">
+					<div class="middle_search_form">
+						<p class="form_search_guide"><strong class="color_skyblue_emp">읍, 면, 동, 도로명 주소</strong>를 입력하세요.</p>
+						<div class="form_search_field">
+							<input type="text" class="form_search_input" placeholder="주소를 입력해주세요">
+							<a href="#" class="btn_form_search"><span class="hdtext">검색</span></a>
+						</div>
+					</div>
+					<div class="middle_result_form">
+						<div class="data_result_box_group">
+							<div class="data_result_box">
+								<div class="data_result_emp">13545</div>
+								<div class="data_key_tb">
+									<div class="data_key_tr">
+										<div class="data_key_cell define_kind"><span class="data_kind_label">도로명</span></div>
+										<div class="data_key_cell define_value"><div class="data_result_text">경기 성남시 분당구 안양판교로 806-6</div></div>
+									</div>
+									<div class="data_key_tr">
+										<div class="data_key_cell define_kind"><span class="data_kind_label">지 번</span></div>
+										<div class="data_key_cell define_value"><div class="data_result_text">경기 성남시 분당구 운중동 432</div></div>
+									</div>
+								</div>
+							</div>
+							<div class="data_result_box">
+								<div class="data_result_emp">13545</div>
+								<div class="data_key_tb">
+									<div class="data_key_tr">
+										<div class="data_key_cell define_kind"><span class="data_kind_label">도로명</span></div>
+										<div class="data_key_cell define_value"><div class="data_result_text">경기 성남시 분당구 안양판교로 806-6</div></div>
+									</div>
+									<div class="data_key_tr">
+										<div class="data_key_cell define_kind"><span class="data_kind_label">지 번</span></div>
+										<div class="data_key_cell define_value"><div class="data_result_text">경기 성남시 분당구 운중동 432</div></div>
+									</div>
+								</div>
+							</div>
+							<div class="nodata_g"><p class="nodata_para">데이터가 없습니다.</p></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<a href="javascript:;" class="btn_closeitem_cir popup_close type2"><span class="hdtext">닫기</span></a>
+		</div>
+	</div>
+	<!-- // popup -->
+	<script>
+		document.addEventListener("DOMContentLoaded", function () {
+			var designPopup = new DesignPopup({
+				selector: "#samplePopup"
+			});
+		});
+		document.querySelector(".btn_guide").addEventListener("click",(e)=>{
+			e.preventDefault();
+			var designPopup = new DesignPopup({
+				selector: "#samplePopup"
+			});
+		});
+	</script>
 </body>
 </html>
