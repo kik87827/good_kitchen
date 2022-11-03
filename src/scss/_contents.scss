@@ -421,8 +421,13 @@ input.props_checkbox{
         display:flex;align-items: center;justify-content:flex-end;padding:0 rem(5);
         background: rgb(0,0,0);
         background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,.5) 100%);
+
+        &.type2{
+
+        }
     }
 }
+.photo_control_title{}
 
 .btn_onlyico{
     display:inline-block;
@@ -680,6 +685,86 @@ select.emp_design_comp{
 .btn_final_submint{display:flex;flex-wrap:wrap;align-items: center;justify-content: center;border:1px solid #489bff; border-radius:rem(100);padding:rem(19) rem(20) rem(20);}
 .btn_final_submint_in{display:inline-block;color:#489bff;font-size:rem(16);line-height:1;font-weight:700;}
 
+.info_copy_group{}
+.info_copy_title{}
+.info_copy_sub{}
+.boxtab_ui_zone{}
+.boxtab_menu_row{}
+.boxtab_menu_list{
+    > li{
+        &.active{}
+    }
+}
+.boxtab_menu{}
+.boxtab_cont_row{}
+.thumnail_item_group{}
+.thumnail_item{}
+.thumnail_photo_cols{}
+.thumnail_photo{
+    > img{}
+}
+.thumnail_photo{}
+.thumnail_spec_cols{}
+.thumnail_spec_sig{}
+.thumnail_spec_sub{}
+
+.tailphoto_list_wrap{}
+.tailphoto_list{
+    > li{
+        &.nodata_li{
+            .nodata_para{}
+        }
+    }
+}
+.tailphoto{
+    > img{}
+}
+.order_item_list_wrap{}
+.order_item_list{
+    > li{
+        &:last-of-type{}
+    }
+}
+.order_item{}
+.order_photo_cell{}
+.order_photo{
+    > img{}
+}
+.order_spec_cell{}
+.order_spec_main_both{}
+.order_spec_main_left{}
+.order_spec_name{}
+.order_spec_main_right{}
+.current_mark_obj{}
+.current_mbox{}
+.current_mark{
+    &.ico_best{
+        &:after{}
+    }
+    &.ico_look01{
+        &:after{}
+    }
+    &.ico_look02{
+        &:after{}
+    }
+    &.ico_look03{
+        &:after{}
+    }
+    &.ico_look04{
+        &:after{}
+    }
+}
+.order_spec_btn_row{
+    .btn_control_box{
+        &:last-of-type{}
+    }
+}
+.btn_control_box{
+    &.type2{}
+}
+.order_spec_price{}
+
+
 @media (min-width:767px){
     .finish_copy_elsebox{max-width:rem(313.3333333333333);margin:0 auto rem(38.33);}
 }
@@ -687,3 +772,5 @@ select.emp_design_comp{
 @media(max-width:359px){
     .nbr{display:block}
 }
+
+

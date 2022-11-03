@@ -3748,7 +3748,6 @@ input.props_checkbox:checked {
   background: rgb(0, 0, 0);
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
 }
-
 .btn_onlyico {
   display: inline-block;
 }

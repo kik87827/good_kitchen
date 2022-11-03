@@ -79,6 +79,10 @@
 			var designPopup = new DesignPopup({
 				selector: "#samplePopup"
 			});
+
+			setTimeout(function(){
+				designPopup.popupHide("#samplePopup");
+			},5000);
 		});
 		document.querySelector(".btn_guide").addEventListener("click", (e) => {
 			e.preventDefault();
