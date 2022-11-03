@@ -75,17 +75,12 @@
 	</div>
 	<!-- // popup -->
 	<script>
-		var designPopup = null;
 		document.addEventListener("DOMContentLoaded", function() {
-			// 선언-오픈
-			designPopup = new DesignPopup({
+			var designPopup = new DesignPopup({
 				selector: "#samplePopup"
 			});
 
-			// 선언-닫기
-			setTimeout(function(){
-				designPopup.popupHide("#samplePopup");
-			},2000);
+			designPopup.popupHide("#samplePopup");
 		});
 		document.querySelector(".btn_guide").addEventListener("click", (e) => {
 			e.preventDefault();
