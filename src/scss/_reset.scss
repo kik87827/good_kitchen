@@ -58,4 +58,5 @@ html.smooth {scroll-behavior: smooth;}
 .touchDis2{touch-action: none;overflow:hidden;position:relative;}
 .touchDisimport{touch-action: none;overflow:hidden !important;position:relative;}
 .ellips{display:inline-block; white-space: nowrap; text-overflow: ellipsis;overflow:hidden;position:relative; max-width:99%;}
+.clamp_01{position:relative;word-break:break-all;display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp: 1;overflow: hidden;line-height:1.3}
 .hdtext{display:inline-block;width:0;height:0;overflow:hidden;line-height:0;color:transparent;position:absolute;top:0;left:-99999px;}
