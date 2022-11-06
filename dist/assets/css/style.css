@@ -5131,8 +5131,50 @@ select.emp_design_comp.dtype2 {
 .view_info_photo img {
   width: 100%;
   border-radius: 0.79125rem;
+  vertical-align: top;
 }
 .view_info_photo:last-of-type {
+  margin-bottom: 0;
+}
+
+.banner_flow_row {
+  position: relative;
+}
+.banner_flow_row .banner_count_layer {
+  padding: 0 1.25rem 1.5625rem;
+  color: #fff;
+  font-size: 0.875rem;
+}
+.banner_flow_row .banner_count_layer .count_part_line {
+  transform: scale(0.8);
+  display: inline-block;
+}
+.box_main_row {
+  z-index: 5;
+  position: relative;
+  background: #fff;
+  border-radius: 0.79125rem 0.79125rem 0 0;
+  margin-top: -0.79125rem;
+  padding-bottom: 0.79125rem;
+}
+
+.box_main_inner {
+  padding: 1.6875rem 1.458125rem;
+}
+
+.data_his_item {
+  padding-bottom: 1.66625rem;
+  margin-bottom: 1.66625rem;
+  border-bottom: 1px solid #d2d2d2;
+}
+.data_his_item.nodata_item {
+  text-align: center;
+  padding: 6.25rem 1.25rem;
+  border: 0;
+}
+.data_his_item:last-of-type {
+  border-bottom: 0;
+  padding-bottom: 0;
   margin-bottom: 0;
 }
 
