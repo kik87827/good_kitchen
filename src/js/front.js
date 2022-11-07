@@ -389,3 +389,15 @@ function toggleTerms(){
     });
   });
 }
+
+function toggleDataFunc(){
+  let data_text_item = document.querySelectorAll(".data_text_item");
+  data_text_item.forEach((element)=>{
+    element.addEventListener("click",(e)=>{
+      e.preventDefault();
+      let thisEventObj = e.currentTarget;
+      let thisEventParent = thisEventObj.closest("li");
+      thisEventParent.classList.toggle("active");
+    });
+  });
+}
