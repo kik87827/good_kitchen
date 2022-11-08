@@ -3739,11 +3739,23 @@ input.emp_props_checkbox:checked {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 
 .props_item {
   display: flex;
   align-items: center;
+}
+
+input.hidden_form {
+  -webkit-appearance: none;
+  appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  text-indent: -9999px;
 }
 
 input.props_checkbox {
@@ -3761,6 +3773,56 @@ input.props_checkbox {
 }
 input.props_checkbox:checked {
   background-position: 0 100%;
+}
+
+.props_label {
+  position: relative;
+  cursor: pointer;
+  padding-left: 1.5625rem;
+  font-size: 0.8125rem;
+  color: #1e1e1e;
+  line-height: 1;
+  display: inline-block;
+  min-height: 1.0625rem;
+  box-sizing: border-box;
+  padding-top: 0.0625rem;
+}
+.props_label .before_item {
+  display: block;
+  content: "";
+  background: #fff;
+  width: 1.0625rem;
+  height: 1.0625rem;
+  border-radius: 100%;
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.props_label .before_item:after {
+  transition: 0.3s;
+  display: block;
+  content: "";
+  width: 0.8125rem;
+  height: 0.8125rem;
+  border: 0.0625rem solid #489bff;
+  border-radius: 100%;
+  background: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+}
+
+input:checked + .props_label .before_item {
+  border-width: 0.375rem;
+  top: 0;
+}
+input:checked + .props_label .before_item:after {
+  border-width: 0.375rem;
+  width: 1.0625rem;
+  height: 1.0625rem;
 }
 
 .props_checkbox_label {
@@ -5379,6 +5441,7 @@ select.emp_design_comp.dtype2 {
 
 .order_tail_img_wrap img {
   vertical-align: top;
+  width: 100%;
 }
 
 .box_tail_title_row {
@@ -5442,6 +5505,9 @@ select.emp_design_comp.dtype2 {
 .box_content_inner {
   position: relative;
   z-index: 2;
+}
+.box_content_inner.type2 {
+  padding: 1.25rem;
 }
 
 .mid_emp_wrap {
@@ -5551,6 +5617,122 @@ select.emp_design_comp.dtype2 {
   border-radius: 0.625rem;
   line-height: 1;
   box-sizing: border-box;
+}
+
+.count_ui_box {
+  border: 1px solid #eaeaea;
+  border-radius: 6.25rem;
+  padding: 0.5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.count_ui_box .btn_count {
+  display: inline-block;
+  width: 0.875rem;
+  height: 0.875rem;
+  border-radius: 100%;
+  background: #daebff;
+  position: relative;
+}
+.count_ui_box .btn_count:before, .count_ui_box .btn_count:after {
+  display: block;
+  content: "";
+  width: 0.375rem;
+  height: 0.0625rem;
+  background: #489bff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -0.03125rem 0 0 -0.1875rem;
+}
+.count_ui_box .btn_count.count_minus:before {
+  display: none;
+}
+.count_ui_box .btn_count.count_plus:after {
+  transform: translateZ(0) rotate(90deg);
+}
+.count_ui_box .count_text_g {
+  font-size: 0.833125rem;
+  line-height: 1;
+  font-weight: 500;
+  padding: 0 0.5rem;
+  display: inline-flex;
+  min-width: 2.1875rem;
+  justify-content: center;
+}
+.tail_vertical_item {
+  border-bottom: 1px solid #e3e3e3;
+  padding-bottom: 1.4375rem;
+  margin-bottom: 1.4375rem;
+}
+.tail_vtitle {
+  font-size: 1rem;
+  color: #262626;
+  line-height: 1;
+  margin-bottom: 1.125rem;
+  font-weight: 700;
+}
+
+.tail_history_list {
+  font-size: 0.75rem;
+  color: #262626;
+}
+.tail_history_list > li {
+  line-height: 1;
+  margin-bottom: 0.625rem;
+}
+.tail_history_list > li strong {
+  font-weight: 700;
+}
+.tail_history_list > li:last-of-type {
+  margin-bottom: 0;
+}
+
+.order_option_list > li {
+  margin-bottom: 0.9375rem;
+}
+.order_option_list > li:last-of-type {
+  margin-bottom: 0;
+}
+
+.order_option_fxwrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.order_both_form {
+  margin-top: 0.9375rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.order_both_title {
+  font-size: 1rem;
+  color: #1e1e1e;
+  font-weight: 700;
+}
+
+.flex_value_item {
+  display: inline-flex;
+  font-size: 0;
+  line-height: 0;
+  align-items: center;
+}
+
+.flex_value_num,
+.flex_value_unit {
+  display: inline-block;
+  line-height: 1;
+  font-size: 0.8125rem;
+  color: #1e1e1e;
+  font-weight: 500;
+}
+
+.flex_value_unit {
+  margin-left: 0.1875rem;
 }
 
 @media (min-width: 767px) {
