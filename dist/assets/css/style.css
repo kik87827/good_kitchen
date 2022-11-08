@@ -3835,6 +3835,15 @@ input:checked + .props_label .before_item:after {
   cursor: pointer;
 }
 
+.props_horizontal_list {
+  display: flex;
+  align-items: center;
+  margin-top: -0.625rem;
+  flex-wrap: wrap;
+}
+.props_horizontal_list > li {
+  margin: 0.625rem 1.125rem 0 0;
+}
 .btn_form_toggle {
   width: 0.958125rem;
   height: 0.958125rem;
@@ -4595,6 +4604,31 @@ select.emp_design_comp.dtype2 {
   font-weight: 500;
 }
 
+.figure_item {
+  display: flex;
+  align-items: center;
+}
+
+.figure_thum {
+  width: 2.0625rem;
+  height: 2.0625rem;
+  border-radius: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.fiqure_caption {
+  color: #262626;
+  font-size: 1.125rem;
+  font-weight: 700;
+  margin-left: 0.625rem;
+}
+
+.board_item_group.type2 .board_title_row {
+  border-bottom: 1px solid #e3e3e3;
+  padding-bottom: 0.625rem;
+}
+
 .board_item {
   padding: 1.66625rem 1.458125rem 1.25rem;
   background: #fff;
@@ -4614,6 +4648,11 @@ select.emp_design_comp.dtype2 {
 
 .board_content_row {
   margin-top: 0.9375rem;
+}
+.board_content_row .order_item_list > li:last-of-type {
+  border-bottom: 0;
+  padding-bottom: 0;
+  margin-bottom: 0;
 }
 
 .edit_field {
@@ -4665,6 +4704,12 @@ select.emp_design_comp.dtype2 {
   border-top: 1px solid #e3e3e3;
   margin-top: 1.25rem;
   padding-top: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tail_total_both {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -4736,6 +4781,9 @@ select.emp_design_comp.dtype2 {
 .btn_final_submint_wrap {
   margin-top: 1.25rem;
   padding-bottom: 0.8125rem;
+}
+.btn_final_submint_wrap.type2 {
+  margin-top: 2.5rem;
 }
 
 .btn_final_submint {
@@ -5666,6 +5714,12 @@ select.emp_design_comp.dtype2 {
   padding-bottom: 1.4375rem;
   margin-bottom: 1.4375rem;
 }
+.tail_vertical_item:last-of-type {
+  border-bottom: 0;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
 .tail_vtitle {
   font-size: 1rem;
   color: #262626;
@@ -5733,6 +5787,17 @@ select.emp_design_comp.dtype2 {
 
 .flex_value_unit {
   margin-left: 0.1875rem;
+}
+
+.inner_block_row {
+  border-bottom: 1px solid #e3e3e3;
+  padding-bottom: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+.inner_block_row:last-of-type {
+  border-bottom: 0;
+  padding-bottom: 0;
+  margin-bottom: 0;
 }
 
 @media (min-width: 767px) {
