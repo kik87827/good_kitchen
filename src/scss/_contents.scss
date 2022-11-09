@@ -726,16 +726,22 @@ select.emp_design_comp{
 .tail_total_label{font-size:rem(18);color:#1e1e1e;font-weight:700;}
 .btn_guide_box_list{
     margin-top:rem(25);
+    &.type2{ margin-top:rem(34);}
     > li{
         margin-bottom:rem(13.33);
         &:last-of-type{margin-bottom:0;}
     }
 }
 .btn_guide_box{
-    background:#f2f2f2; border-radius:6px;display:block; padding:rem(14) rem(40) rem(14) rem(15.33333333333333);position:relative;line-height:0;font-size:0;
+    background:#f2f2f2; border-radius:6px;display:block; padding:rem(14) rem(40) rem(14) rem(15.33);position:relative;line-height:0;font-size:0;
     &:after{display:block;content:'';background:url("../images/ico_allow_link.png") no-repeat 0 0/100% auto;width:rem(6);height:rem(10);position:absolute;top:50%;right:rem(17); margin-top:rem(-5);}
 }
 .btn_guide_box_in{display:inline-block;font-weight:500;color:#6e6e6e;font-size:rem(12.66);line-height:1;}
+.guide_flex_label{display:inline-block;font-weight:500;color:#6e6e6e;font-size:rem(12.66);line-height:1;}
+.guide_flex_value{display:inline-block;font-weight:500;color:#aeaeae;font-size:rem(10.66);line-height:1;}
+.btn_guide_flex_box{
+    padding:rem(14) rem(15.33) rem(14) rem(15.33); background:#f2f2f2; border-radius:6px;display:flex;justify-content: space-between;align-items: center;
+}
 .final_step_row{margin-top:rem(25);}
 .final_step_copy{display:block;color:#489bff;font-weight:500;text-align: center;font-size:rem(12.66);}
 .btn_final_submint_wrap{margin-top:rem(20);padding-bottom:rem(13);
@@ -1178,6 +1184,45 @@ select.emp_design_comp{
 .inner_block_row{}
 .inner_block_group{}
 
+.profile_zone{}
+.profile_inwrap{display:flex;align-items: center;position:relative;
+    &:after{display:block;content:'';width:rem(22);height:rem(22);border-radius:100%;position:absolute;top:50%;right:0;transform: translateY(-50%);background:url("../images/ico_linkallow.png") no-repeat 0 0/100% auto;}
+}
+.profile_thum{
+    flex:0 0 rem(38);position:relative;width:rem(38);height:rem(38);border-radius:100%;border:1px solid #3c3c3c;overflow:hidden;
+    > img{}
+}
+.profile_spec{font-size:rem(20);color:#1e1e1e;line-height:1.3;display:block;flex:1;font-weight:700;margin-left:rem(12);}
+.data_intro_fxwrap{font-size:0;line-height:0;margin-top:rem(20);padding:rem(15) rem(20);background:#e2edfc;border-radius:rem(6);display:flex;justify-content: space-between;align-items: center;}
+.data_intro_label{color:#489bff;font-size:rem(14.66);line-height:1;font-weight:700;}
+.btn_textonly{color:#489bff;font-size:rem(12);line-height:1;font-weight:700;display:inline-block;}
+.data_intro_btns{}
+.swiper-container.order_current_swiper{margin-top:rem(30);}
+.swiper-container.order_current_swiper .swiper-slide{}
+.order_box_item{display:block;border-radius:rem(14);background:#fff;border:1px solid #70b0ff;padding:rem(20);margin-bottom:rem(13);
+    &:last-of-type{margin-bottom:0;}
+}
+.order_getdata{display:flex;align-items: center;}
+.order_data_thum{
+    width:rem(33.33);height:rem(33.33);flex:0 0 rem(33.33);border-radius:rem(9);position:relative;background:#70b0ff;overflow:hidden;
+    > img{}
+}
+.order_data_spec{flex:1;min-width:0;margin-left:rem(10);}
+.order_data_text{font-size:rem(14);color:#1e1e1e;font-weight:700;}
+.progress_bar_row{margin-top:rem(10);display:flex;align-items: center;}
+.progress_bar_zone{
+    background:#efefef;height:rem(5);border-radius:rem(1000);position:relative;flex:1;min-width:0;
+}
+.progress_bar_current{
+    position:absolute;top:0;left:0;height:100%;border-radius:rem(1000);background:#70b0ff;
+    &:after{display:block;content:'';width:rem(5);height:rem(5);border-radius:100%;position:absolute;top:50%;right:rem(-5);transform:translateY(-50%);background:#fff;border:rem(5) solid #70b0ff;}
+}
+.progress_current_text{flex:0;font-size:rem(14);color:#489bff;font-weight:700;display:inline-block;white-space: nowrap;margin-left:rem(23)}
+.order_current_swiper .swiper-pagination{
+    position:static;font-size:0;line-height:0;
+    .swiper-pagination-bullet{background:#e9e9e9;width:rem(10);height:rem(10);opacity: 1;border-radius:100%;margin:0 rem(10)}
+    .swiper-pagination-bullet.swiper-pagination-bullet-active{background:#489bff;}
+}
 
 @media (min-width:767px){
     .finish_copy_elsebox{max-width:rem(313.3333333333333);margin:0 auto rem(38.33);}
