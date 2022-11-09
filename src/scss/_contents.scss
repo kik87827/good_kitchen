@@ -1185,7 +1185,7 @@ select.emp_design_comp{
 .inner_block_group{}
 
 .profile_zone{}
-.profile_inwrap{display:flex;align-items: center;position:relative;
+.profile_inwrap{display:flex;align-items: center;position:relative;padding-right:rem(30);
     &:after{display:block;content:'';width:rem(22);height:rem(22);border-radius:100%;position:absolute;top:50%;right:0;transform: translateY(-50%);background:url("../images/ico_linkallow.png") no-repeat 0 0/100% auto;}
 }
 .profile_thum{
