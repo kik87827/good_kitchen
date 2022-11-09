@@ -953,7 +953,10 @@ html,
 
 .header_wrap {
   height: 4.16625rem;
-  position: relative;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
   width: 100%;
   background-color: #fff;
   z-index: 5;

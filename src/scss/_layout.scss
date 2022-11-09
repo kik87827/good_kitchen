@@ -38,7 +38,7 @@ html,
 .header_title{display:inline-block;line-height:1;font-size:rem(19.33);font-weight:700;}
 .between_main_group{flex:1;min-height:0;}
 .between_else_group{flex:0;}
-.header_wrap{height:rem(66.66);position:relative;width:100%;background-color: #fff;z-index:5;display:flex;align-items: center;justify-content: center;
+.header_wrap{height:rem(66.66);position:sticky;top:0;left:0;width:100%;background-color: #fff;z-index:5;display:flex;align-items: center;justify-content: center;
     &.type2{
         background:#fff;
         -webkit-box-shadow: 2px 2px 13px 2px rgba(0,0,0,0.08); 
