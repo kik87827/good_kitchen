@@ -935,6 +935,10 @@ html,
   padding: 1.6666666667rem 1.458125rem 3.75rem;
 }
 
+.middle_inwrap {
+  padding: 1.6666666667rem 1.458125rem;
+}
+
 .header_title {
   display: inline-block;
   line-height: 1;
@@ -5896,7 +5900,11 @@ select.emp_design_comp.dtype2 {
 }
 
 .swiper-container.order_current_swiper {
-  margin-top: 1.875rem;
+  margin: 1.875rem -1.458125rem;
+}
+
+.order_box_item_group {
+  padding: 0 1.458125rem;
 }
 
 .order_box_item {
@@ -5988,11 +5996,12 @@ select.emp_design_comp.dtype2 {
   position: static;
   font-size: 0;
   line-height: 0;
+  margin-top: 2.083125rem;
 }
 .order_current_swiper .swiper-pagination .swiper-pagination-bullet {
-  background: #e9e9e9;
-  width: 0.625rem;
-  height: 0.625rem;
+  background: #d5e5f9;
+  width: 0.41625rem;
+  height: 0.41625rem;
   opacity: 1;
   border-radius: 100%;
   margin: 0 0.625rem;
@@ -6001,6 +6010,12 @@ select.emp_design_comp.dtype2 {
   background: #489bff;
 }
 
+.vbox {
+  margin-bottom: 0.8125rem;
+}
+.vbox:last-of-type {
+  margin-bottom: 0;
+}
 @media (min-width: 767px) {
   .finish_copy_elsebox {
     max-width: 19.5833333333rem;

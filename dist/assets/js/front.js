@@ -373,6 +373,22 @@ function bannerSwiperFunc(target) {
   }
 }
 
+function orderSwiperFunc(target) {
+  var order_target = document.querySelector(target);
+  var order_slide = document.querySelectorAll(`${target} .swiper-slide`);
+  var order_swiper = null;
+  if (order_slide.length) {
+    order_swiper = new Swiper(target, {
+      speed: 800,
+      loop: true,
+      pagination: {
+        clickable: true,
+        el: `${target} .swiper-pagination`,
+      }
+    });
+  }
+}
+
 
 function toggleTerms() {
   const emp_props_checkbox = document.querySelector(".agree_total_row .emp_props_checkbox");
