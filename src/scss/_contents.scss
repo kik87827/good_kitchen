@@ -756,6 +756,7 @@ select.emp_design_comp{
 .final_step_copy{display:block;color:#489bff;font-weight:500;text-align: center;font-size:rem(12.66);}
 .btn_final_submint_wrap{margin-top:rem(20);padding-bottom:rem(13);
     &.type2{margin-top:rem(40);}
+    &.type3{padding-bottom:0;}
 }
 .btn_final_submint{display:flex;flex-wrap:wrap;align-items: center;justify-content: center;border:1px solid #489bff; border-radius:rem(100);padding:rem(19) rem(20) rem(20);}
 .btn_final_submint_in{display:inline-block;color:#489bff;font-size:rem(16);line-height:1;font-weight:700;}
@@ -1261,6 +1262,43 @@ select.emp_design_comp{
     }
 }
 .flex_submit_in{display:inline-block;line-height:1;font-size:rem(16.66);font-weight:700;}
+
+.mid_title{color:#1e1e1e;line-height:1;font-weight:700;font-size:rem(16);}
+.mid_form_row{
+    margin-top:rem(23);
+    .thumnail_data_fxwrap{}
+
+    .upload_item_fxwrap{margin-top:rem(20);}
+
+    .look_item_wrap{}
+
+    .btn_final_submint_wrap{}
+}
+
+.upload_item_fxwrap{display:flex;flex-wrap:wrap;margin-top:rem(-10)}
+.upload_item{
+    margin:rem(10) rem(10) 0 0; position:relative; width:rem(66.66);height:rem(66.66);border-radius:rem(10);background:#e5f1ff;position:relative;overflow:hidden;
+    &.input_upload_item{display:flex;align-items: center;justify-content: center;}
+    &.uploaded{}
+    input.input_file{appearance: none;-webkit-appearance:none;position:absolute;top:0;left:0;width:100%;height:100%;opacity:0;cursor: pointer;}
+}
+.upload_text{
+    color:#489bff;font-size:rem(8.66);font-weight:500;color:#489bff;opacity:.8;
+    &:before{display:block;content:'';width:rem(14);height:rem(11.33);background:url("../images/ico_photo.png") no-repeat 0 0/100% auto;margin:0 auto rem(3);}
+}
+.look_item_wrap{margin-top:rem(15.66);display:flex;flex-wrap:wrap;
+    .current_mark_obj{margin:rem(10) rem(13.33) 0 0}
+}
+.user_form_wrap{
+    margin-top:rem(20);
+    .indent_para{margin-top:rem(18);}
+}
+textarea.user_form_ta{vertical-align:top;box-sizing:border-box;border:0;width:100%;resize:none;border-top:1px solid #bbbbbb;border-bottom:1px solid #bbbbbb;height:rem(135);padding:rem(16) 0;}
+
+.indent_para{display:flex;font-size:rem(11);color:#262626;}
+.indent_bullet{flex:0; white-space: nowrap;margin-right:rem(3);}
+.indent_text{}
+
 
 @media (min-width:767px){
     .finish_copy_elsebox{max-width:rem(313.3333333333333);margin:0 auto rem(38.33);}
