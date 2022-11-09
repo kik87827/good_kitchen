@@ -389,6 +389,26 @@ function orderSwiperFunc(target) {
   }
 }
 
+function moreDataLayer() {
+  const btn_data_more = document.querySelectorAll(".btn_data_more");
+  const edit_layer = document.querySelectorAll(".edit_layer");
+  btn_data_more.forEach((element) => {
+    element.addEventListener("click", (e) => {
+      let thisEventObj = e.currentTarget;
+      let thisEventTarget = thisEventObj.nextElementSibling;
+      thisEventTarget.classList.toggle("active");
+    });
+  });
+  document.addEventListener("click", (e) => {
+    if (e.target.closest(".edit_layer") !== null || e.target.classList.contains("btn_data_more")) {
+      return;
+    }
+    edit_layer.forEach((element) => {
+      element.classList.remove("active");
+    });
+  });
+}
+
 
 function toggleTerms() {
   const emp_props_checkbox = document.querySelector(".agree_total_row .emp_props_checkbox");

@@ -5351,9 +5351,76 @@ select.emp_design_comp.dtype2 {
 
 .profile_spec_right {
   flex: 0;
+  position: relative;
 }
 .profile_spec_right .btn_control_box:last-of-type {
   margin: 0;
+}
+
+.btn_data_more {
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  background: url("../images/ico_more.png") no-repeat 100% 50%/auto 100%;
+  position: relative;
+}
+.btn_data_more:after {
+  display: block;
+  content: "";
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  top: -0.5rem;
+  left: -0.125rem;
+}
+
+.edit_layer {
+  display: none;
+  background: #fff;
+  padding: 15px;
+  border: 1px solid #e0e0e0;
+  border-radius: 0.75rem;
+  z-index: 10;
+  position: absolute;
+  top: 1.375rem;
+  right: 0;
+  box-shadow: 6px 4px 22px -8px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 6px 4px 22px -8px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 6px 4px 22px -8px rgba(0, 0, 0, 0.1);
+}
+.edit_layer.active {
+  display: block;
+}
+
+.edit_item_list > li {
+  margin-bottom: 0.9375rem;
+}
+.edit_item_list > li:last-of-type {
+  margin-bottom: 0;
+}
+
+.btn_data_edit {
+  display: inline-flex;
+  font-size: 0.75rem;
+  color: #1e1e1e;
+  line-height: 1;
+  font-weight: 500;
+  white-space: nowrap;
+  align-items: center;
+}
+.btn_data_edit[class*=ico_]:after {
+  display: block;
+  content: "";
+  width: 0.75rem;
+  height: 0.75rem;
+  background: url("../images/ico_moretail.png") no-repeat 0 0/100% auto;
+  margin-left: 0.4375rem;
+}
+.btn_data_edit.ico_modify:after {
+  background-position: 0 0;
+}
+.btn_data_edit.ico_del:after {
+  background-position: 0 100%;
 }
 
 .view_info_tail_row {
@@ -5411,6 +5478,10 @@ select.emp_design_comp.dtype2 {
 
 .box_main_inner {
   padding: 1.6875rem 1.458125rem;
+}
+
+.data_history_group.type2 {
+  padding: 1.25rem;
 }
 
 .data_his_item {

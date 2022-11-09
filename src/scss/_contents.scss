@@ -972,11 +972,35 @@ select.emp_design_comp{
 .profile_else_date{color:#9a9a9a;font-size:rem(11.33);line-height:1;margin-top:rem(6);}
 
 .view_info_tail_group{}
-.profile_spec_right{flex:0;
+.profile_spec_right{flex:0;position:relative;
     .btn_control_box{
         &:last-of-type{margin:0;}
     }
 }
+.btn_data_more{display:inline-block;width:rem(16);height:rem(16);background:url("../images/ico_more.png") no-repeat 100% 50%/auto 100%;position:relative;
+    &:after{display:block;content:'';width:rem(32);height:rem(32);position:absolute;top:rem(-8);left:rem(-2);}
+}
+.edit_layer{display:none;background:#fff;padding:15px;border:1px solid #e0e0e0;border-radius:rem(12);z-index:10;position:absolute;top:rem(22);right:0;
+    box-shadow: 6px 4px 22px -8px rgba(0,0,0,0.1);
+    -webkit-box-shadow: 6px 4px 22px -8px rgba(0,0,0,0.1);
+    -moz-box-shadow: 6px 4px 22px -8px rgba(0,0,0,0.1);
+
+    &.active{display:block;}
+}
+.edit_item_list{
+    > li{
+        margin-bottom:rem(15);
+        &:last-of-type{margin-bottom:0;}
+    }
+}
+.btn_data_edit{
+    display:inline-flex;font-size:rem(12);color:#1e1e1e;line-height:1;font-weight:500;white-space:nowrap;align-items:center;
+    &[class*="ico_"]:after{display:block;content:'';width:rem(12);height:rem(12);background:url("../images/ico_moretail.png") no-repeat 0 0/100% auto;margin-left:rem(7)}
+    &.ico_modify:after{background-position:0 0;}
+    &.ico_del:after{background-position:0 100%;}
+}
+
+
 .profile_else_date{}
 .view_info_tail_row{margin-top:rem(21);}
 .view_info_tail{}
@@ -1004,13 +1028,16 @@ select.emp_design_comp{
 }
 .box_main_row{z-index:5;position:relative;background:#fff;border-radius:rem(12.66) rem(12.66) 0 0;margin-top:rem(-12.66);padding-bottom:rem(12.66);}
 .box_main_inner{padding: rem(27) rem(23.33);}
-.data_history_group{}
+.data_history_group{
+    &.type2{
+        padding:rem(20);
+    }
+}
 .data_his_item{
     padding-bottom:rem(26.66);margin-bottom:rem(26.66);border-bottom:1px solid #d2d2d2;
     &.nodata_item{text-align: center;padding:rem(100) rem(20) !important;border:0;}
     &:last-of-type{border-bottom:0;padding-bottom:0;margin-bottom:0;}
 }
-
 
 // main
 .mc_zone{}
