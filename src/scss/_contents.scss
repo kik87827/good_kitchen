@@ -684,10 +684,16 @@ select.emp_design_comp{
     &.type2{
         .board_title_row{border-bottom:1px solid #e3e3e3;padding-bottom:rem(10)}
     }
+    &.ptype2{
+        .board_item{}
+        .order_item_list_wrap{padding:0}
+    }
 }
 .board_item{padding:rem(26.66) rem(23.33) rem(20);background:#fff;border-bottom:rem(6.66) solid #f4f4f4;}
 .board_item:last-of-type{border-bottom:0;}
-.board_title_row{}
+.board_title_row{
+    &.dtype2{border-bottom:1px solid #e3e3e3;padding-bottom:rem(10)}
+}
 .board_title{font-size:rem(17.33);color:#262626;line-height:1;font-weight:700;}
 .board_content_row{margin-top:rem(15);
     .order_item_list > li{
@@ -701,7 +707,9 @@ select.emp_design_comp{
 .order_total_wrap{}
 .order_form_row{}
 .order_form_row .form_select{}
-.order_tail_row{margin-top:rem(20);}
+.order_tail_row{margin-top:rem(20);
+    &.type2{margin-top:0;}
+}
 .tail_tb{
     > li{display:flex;align-items: center;justify-content: space-between;}
 }
@@ -742,7 +750,9 @@ select.emp_design_comp{
 .btn_guide_flex_box{
     padding:rem(14) rem(15.33) rem(14) rem(15.33); background:#f2f2f2; border-radius:6px;display:flex;justify-content: space-between;align-items: center;
 }
-.final_step_row{margin-top:rem(25);}
+.final_step_row{margin-top:rem(25);
+    &.type2{margin-top:rem(50)}
+}
 .final_step_copy{display:block;color:#489bff;font-weight:500;text-align: center;font-size:rem(12.66);}
 .btn_final_submint_wrap{margin-top:rem(20);padding-bottom:rem(13);
     &.type2{margin-top:rem(40);}
@@ -1227,16 +1237,30 @@ select.emp_design_comp{
 
 .vbox_group{}
 .vbox{
-    margin-bottom:rem(13);
+    margin-bottom:rem(13);border-radius:rem(6);padding:rem(16);
     &:last-of-type{margin-bottom:0}
-    &.emp{}
+    &.emp{background:#e5f1ff;}
+    background:#f4f4f4;
 }
-.vbox_para{}
+.vbox_para{font-size:rem(14.66);color:#489bff;font-weight:700;}
 .text_history{
+    font-size:rem(12.66);color:#262626;
     > li{
-        &:last-of-type{}
+        margin-bottom:rem(12);
+        &:last-of-type{margin-bottom:0;}
     }
 }
+
+.btn_flex_submit_wrap{display:flex;height:rem(48.33);margin:0 rem(-5) rem(20);}
+.flex_submit_cell{flex:1;margin:0 rem(5);}
+.btn_flex_submit{
+    background:#f4f4f4;display:flex;align-items: center;justify-content:center;border-radius:rem(10);box-sizing:border-box;height:100%;
+    &.type2{
+        background:#489bff;
+        .flex_submit_in{color:#fff;}
+    }
+}
+.flex_submit_in{display:inline-block;line-height:1;font-size:rem(16.66);font-weight:700;}
 
 @media (min-width:767px){
     .finish_copy_elsebox{max-width:rem(313.3333333333333);margin:0 auto rem(38.33);}
